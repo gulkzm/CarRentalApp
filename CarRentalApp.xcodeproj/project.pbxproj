@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		24AB510D2D2310140020DE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB510C2D2310140020DE1F /* AppDelegate.swift */; };
 		24AB510F2D2310140020DE1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB510E2D2310140020DE1F /* SceneDelegate.swift */; };
-		24AB51112D2310140020DE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB51102D2310140020DE1F /* ViewController.swift */; };
 		24AB51142D2310140020DE1F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24AB51132D2310140020DE1F /* Base */; };
 		24AB51172D2310150020DE1F /* CarRentalApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24AB51152D2310150020DE1F /* CarRentalApp.xcdatamodeld */; };
 		24AB51192D2310160020DE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AB51182D2310160020DE1F /* Assets.xcassets */; };
 		24AB511C2D2310160020DE1F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24AB511B2D2310160020DE1F /* Base */; };
+		24AB51532D2311C10020DE1F /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB514F2D2311C10020DE1F /* Car+CoreDataClass.swift */; };
+		24AB51542D2311C10020DE1F /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB51502D2311C10020DE1F /* Car+CoreDataProperties.swift */; };
+		24AB51552D2311C10020DE1F /* CarType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB51512D2311C10020DE1F /* CarType+CoreDataClass.swift */; };
+		24AB51562D2311C10020DE1F /* CarType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB51522D2311C10020DE1F /* CarType+CoreDataProperties.swift */; };
+		24AB515A2D2312AF0020DE1F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB51592D2312AF0020DE1F /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 		24AB51092D2310140020DE1F /* CarRentalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarRentalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AB510C2D2310140020DE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24AB510E2D2310140020DE1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24AB51102D2310140020DE1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24AB51132D2310140020DE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24AB51162D2310150020DE1F /* CarRentalApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarRentalApp.xcdatamodel; sourceTree = "<group>"; };
 		24AB51182D2310160020DE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +48,11 @@
 		24AB511D2D2310160020DE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24AB51222D2310170020DE1F /* CarRentalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRentalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AB512C2D2310170020DE1F /* CarRentalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRentalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24AB514F2D2311C10020DE1F /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		24AB51502D2311C10020DE1F /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		24AB51512D2311C10020DE1F /* CarType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		24AB51522D2311C10020DE1F /* CarType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		24AB51592D2312AF0020DE1F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,16 +101,36 @@
 		24AB510B2D2310140020DE1F /* CarRentalApp */ = {
 			isa = PBXGroup;
 			children = (
+				24AB51572D23122B0020DE1F /* CoreDataModels */,
+				24AB51582D2312680020DE1F /* Scene */,
 				24AB510C2D2310140020DE1F /* AppDelegate.swift */,
-				24AB510E2D2310140020DE1F /* SceneDelegate.swift */,
-				24AB51102D2310140020DE1F /* ViewController.swift */,
-				24AB51122D2310140020DE1F /* Main.storyboard */,
 				24AB51182D2310160020DE1F /* Assets.xcassets */,
-				24AB511A2D2310160020DE1F /* LaunchScreen.storyboard */,
-				24AB511D2D2310160020DE1F /* Info.plist */,
 				24AB51152D2310150020DE1F /* CarRentalApp.xcdatamodeld */,
+				24AB511D2D2310160020DE1F /* Info.plist */,
+				24AB511A2D2310160020DE1F /* LaunchScreen.storyboard */,
+				24AB51122D2310140020DE1F /* Main.storyboard */,
+				24AB510E2D2310140020DE1F /* SceneDelegate.swift */,
 			);
 			path = CarRentalApp;
+			sourceTree = "<group>";
+		};
+		24AB51572D23122B0020DE1F /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				24AB514F2D2311C10020DE1F /* Car+CoreDataClass.swift */,
+				24AB51502D2311C10020DE1F /* Car+CoreDataProperties.swift */,
+				24AB51512D2311C10020DE1F /* CarType+CoreDataClass.swift */,
+				24AB51522D2311C10020DE1F /* CarType+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		24AB51582D2312680020DE1F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				24AB51592D2312AF0020DE1F /* HomeController.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24AB51112D2310140020DE1F /* ViewController.swift in Sources */,
+				24AB51532D2311C10020DE1F /* Car+CoreDataClass.swift in Sources */,
+				24AB51542D2311C10020DE1F /* Car+CoreDataProperties.swift in Sources */,
+				24AB51552D2311C10020DE1F /* CarType+CoreDataClass.swift in Sources */,
+				24AB51562D2311C10020DE1F /* CarType+CoreDataProperties.swift in Sources */,
+				24AB515A2D2312AF0020DE1F /* HomeController.swift in Sources */,
 				24AB510D2D2310140020DE1F /* AppDelegate.swift in Sources */,
 				24AB51172D2310150020DE1F /* CarRentalApp.xcdatamodeld in Sources */,
 				24AB510F2D2310140020DE1F /* SceneDelegate.swift in Sources */,
